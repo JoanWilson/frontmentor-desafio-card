@@ -1,0 +1,139 @@
+/*- Mobile: 375px
+- Desktop: 1440px
+*/
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*Variables*/
+:root {
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --neutral-very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-dark-blue: hsl(223, 47%, 23%);
+
+}
+
+/* Patterns */
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-color: var(--primary-pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+p {
+    font-size: 16px;
+    color: var(--neutral-desaturated-blue);
+    line-height: 1.5;
+}
+
+/*Card Container*/
+#container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+#card {
+    width: 375px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 2em hsla(224, 23%, 55%, 0.315);
+}
+
+/*Card Hero*/
+img {
+    border-radius: 15px 15px 0px 0px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Card Content*/
+#card-content {
+    padding: 40px 40px;
+}
+
+#title-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--neutral-dark-blue);
+}
+
+#plan-option {
+    background-color: var(--neutral-very-pale-blue);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#plan-description {
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+h2 {
+    font-weight:700;
+    color: var(--neutral-dark-blue);
+}
+
+p#p-plan-description{
+    margin-top: 5px;
+}
+
+#plan-change-container {
+    display: flex;
+    flex-direction: row-reverse;
+    
+    width: 120px;
+}
+
+#buttons {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#proceed-order {
+    background-color: var(--primary-bright-blue);
+    border: none;
+    color: white;
+    font-weight: 800;
+    height: 43px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 20px 1em var(--primary-pale-blue);
+    margin-bottom: 25px;
+}
+
+#proceed-order:hover {
+    background-color: hsl(245, 70%, 65%);
+}
+
+#cancel-order {
+    background: none;
+    border: none;
+    font-weight: 900;
+    color: var(--neutral-desaturated-blue);
+    cursor: pointer;
+}
+
+#cancel-order:hover {
+    color: var(--neutral-dark-blue);
+}
+
+
+
+
